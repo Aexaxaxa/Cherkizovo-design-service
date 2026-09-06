@@ -58,4 +58,4 @@
 
 Git tag сохраняет отслеживаемые исходники, а не production data, секреты или внешние файлы. `0_documents.zip` и `0_documents/` остаются пользовательскими локальными untracked-объектами и не входят в baseline commit или новые PR.
 
-В baseline нет отслеживаемой конфигурации Vercel, найденной по именам `*vercel*`, и доступного Vercel MCP в сеансе подготовки нет. Фактическая связь Vercel, Production branch и Preview требуют отдельной read-only проверки. GitHub default branch подтверждена как `main`; это само по себе не доказывает Vercel Production branch.
+В baseline нет отслеживаемой конфигурации Vercel, найденной по именам `*vercel*`, и доступного Vercel MCP в сеансе подготовки нет. Позднее GitHub PR #2 подтвердил срабатывание Vercel-интеграции для рабочей ветки: `Vercel Preview Comments` — SUCCESS; статус `Vercel` при первом чтении — PENDING, со ссылкой на deployment проекта `a-feds-projects/cherkizovo-design-service`. Фактическая Production branch и общая политика Preview требуют отдельной read-only проверки. GitHub default branch подтверждена как `main`; это само по себе не доказывает Vercel Production branch.

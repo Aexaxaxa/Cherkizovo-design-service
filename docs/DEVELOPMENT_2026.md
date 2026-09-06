@@ -55,7 +55,7 @@ PR #1 (`codex/plugin-setup`) перенаправлен с `main` в `develop-20
 
 Желаемое состояние: `main` → Production; `develop-2026` и `feature/*` → Preview. Не переключайте GitHub default branch и Vercel Production branch на develop. Не меняйте production env и не выполняйте production deployment новой версии без отдельного разрешения.
 
-При подготовке Vercel MCP недоступен: связь проекта, фактическая Production branch и включение Preview не подтверждены. В Vercel проверьте Git-связь с `Aexaxaxa/cherkizovo-design-service`, Production branch/environment tracking и Preview для рабочих веток. Если Production branch отличается от main, сначала сообщите владельцу; автоматически не исправляйте.
+При подготовке Vercel MCP недоступен. Однако GitHub PR #2 показывает интеграцию с проектом Vercel `a-feds-projects/cherkizovo-design-service`: проверка `Vercel Preview Comments` успешна, а проверка `Vercel` при первом чтении находится в PENDING и содержит ссылку на deployment. Это подтверждает срабатывание интеграции для рабочей ветки, но не Production branch и не общую политику Preview. В Vercel проверьте Production branch/environment tracking и Preview для `develop-2026` и рабочих веток. Если Production branch отличается от main, сначала сообщите владельцу; автоматически не исправляйте.
 
 ## Восстановление старого исходного кода
 
